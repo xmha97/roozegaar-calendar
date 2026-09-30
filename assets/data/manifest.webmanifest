@@ -1,14 +1,23 @@
 {
-  "name": "گاه‌شمار روزگار",
-  "short_name": "گاه‌شمار روزگار",
-  "description": "یک گاه‌شمار فارسی و میلادی با قابلیت مدیریت رویدادها",
+  "name": "Roozegaar Calendar",
+  "name_localized": {
+    "fa": { "value": "گاه‌شمار روزگار", "lang": "fa", "dir": "rtl" }
+  },
+  "short_name": "Roozegaar Calendar",
+  "short_name_localized": {
+    "fa": { "value": "گاه‌شمار روزگار", "lang": "fa", "dir": "rtl" }
+  },
+  "description": "A Persian and Gregorian bilingual calendar with event management features",
+  "description_localized": {
+    "fa": { "value": "یک گاه‌شمار فارسی و میلادی با قابلیت مدیریت رویدادها", "lang": "fa", "dir": "rtl" }
+  },
   "start_url": "/calendar/",
   "display": "standalone",
   "background_color": "#f5f5f5",
   "theme_color": "#4a6fa5",
   "orientation": "any",
-  "lang": "fa",
-  "dir": "rtl",
+  "lang": "en",
+  "dir": "ltr",
   "icons": [
     {
       "src": "../../assets/images/icons/icon-72x72.png",

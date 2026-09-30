@@ -48,9 +48,6 @@ function initializeApp() {
             await loadLanguage(currentLang);
             document.body.setAttribute('data-calendar', currentCalendar);
             
-            // Initialize manifest based on language
-            updateManifest();
-            
             // Initialize theme (updated)
             console.log('🎨 Initializing theme...');
             initializeTheme();
@@ -1569,27 +1566,6 @@ function setupEventModal() {
 function setupThemeAndLanguageToggles() {
     if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
     if (langToggle) langToggle.addEventListener('click', toggleLanguage);
-}
-
-// ======================= MANIFEST MANAGEMENT =======================
-/**
- * Updates PWA manifest based on current language
- */
-function updateManifest() {
-    // Remove existing manifest if any
-    const existingManifest = document.querySelector('link[rel="manifest"]');
-    if (existingManifest) {
-        document.head.removeChild(existingManifest);
-    }
-    
-    // Create new manifest with current language
-    const lang = localStorage.getItem("lang") || (navigator.language.startsWith("fa") ? "fa" : "en");
-    const manifest = document.createElement("link");
-    manifest.rel = "manifest";
-    manifest.href = `${BASE_PATH}/assets/data/manifest-${lang}.json`;
-    document.head.appendChild(manifest);
-    
-    console.log(`Manifest updated to: manifest-${lang}.json`);
 }
 
 // ======================= MOBILE MENU =======================

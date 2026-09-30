@@ -57,7 +57,7 @@ open index.html
 ```
 Roozegaar Calendar/
 ├── index.html
-├── manifest.json
+├── manifest.webmanifest
 ├── service-worker.js
 ├── icons/
 │   ├── icon-72x72.png
@@ -167,7 +167,7 @@ open index.html
 ```
 Roozegaar Calendar/
 ├── index.html
-├── manifest.json
+├── manifest.webmanifest
 ├── service-worker.js
 ├── icons/
 │   ├── icon-72x72.png
